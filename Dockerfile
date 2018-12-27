@@ -2,8 +2,15 @@
 FROM alpine:latest
 
 # Install system dependencies
-RUN apk add --no-cache --update   bash   gcc   musl-dev
-  postgresql-dev   python3   python3-dev   py3-pip RUN pip3 install --no-cache-dir -q pipenv
+RUN apk add --no-cache --update
+  bash \
+  gcc \
+  musl-dev \
+  postgresql-dev \
+  python3 \
+  python3-dev \
+  py3-pip
+RUN pip3 install --no-cache-dir -q pipenv
 
 # Add our code
 ADD ./ /opt/webapp/
