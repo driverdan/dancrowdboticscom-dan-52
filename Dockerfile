@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # Install system dependencies
-RUN apk add --no-cache --update
+RUN apk add --no-cache --update \
   bash \
   gcc \
   musl-dev \
