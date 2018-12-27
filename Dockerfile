@@ -24,4 +24,4 @@ RUN adduser -D myuser
 USER myuser
 
 # Run the web server on port $PORT
-CMD waitress-serve --port=$PORT dancrowdboticscom-dan-52.wsgi:application
+CMD waitress-serve --port=$PORT dancrowdboticscom_dan_52.wsgi:application
